@@ -59,7 +59,7 @@ header li a:hover {
 .home {
   padding-top: 15em;
   padding-bottom: 15em;
-  background-image: url(/img/allianz2.jpg);
+  background-image: url(../img/allianz2.jpg);
   background-position: center;
   background-size: cover;
   color: #ba1655;
