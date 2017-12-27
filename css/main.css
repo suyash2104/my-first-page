@@ -31,6 +31,16 @@ body {
   color: black;
 }
 
+@media (min-width: 600px) {
+  .button {
+    color: #29383a;
+    border: 5px solid #29383a;
+  }
+  .button:hover {
+    background-color: #adc8cc;
+  }
+}
+
 header {
   position: absolute;
   left: 0;
@@ -56,10 +66,17 @@ header li a:hover {
   color: #ddd;
 }
 
+@media (max-width: 330px) {
+  header li {
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+  }
+}
+
 .home {
   padding-top: 15em;
   padding-bottom: 15em;
-  background-image: url(/img/allianz2.jpg);
+  background-image: url(../img/allianz2.jpg);
   background-position: center;
   background-size: cover;
   color: #ba1655;
@@ -68,6 +85,13 @@ header li a:hover {
 
 .home h2 {
   padding-bottom: .5em;
+}
+
+@media (min-width: 600px) {
+  .home {
+    padding-top: 20em;
+    height: 100vh;
+  }
 }
 
 .news h2 {
@@ -120,7 +144,7 @@ header li a:hover {
 
 .fix-comp {
   float: left;
-  display: block;
+  display: inline-block;
   width: 100vw;
 }
 
@@ -148,6 +172,26 @@ header li a:hover {
 .fix-box {
   border-bottom: 5px solid aqua;
   padding-bottom: 1em;
+}
+
+@media (min-width: 806px) {
+  .fix-box {
+    display: inline-block;
+    float: left;
+    border-left: 5px solid aqua;
+    border-right: 5px solid aqua;
+    border-bottom: 0px;
+    width: 33.333333%;
+    height: 20%;
+  }
+  .fix--big {
+    display: flex row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    overflow: auto;
+  }
 }
 
 footer {

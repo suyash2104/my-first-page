@@ -1,3 +1,21 @@
 .fix-box
   border-bottom: 5px solid aqua
   padding-bottom: 1em
+
+
+//desktop
+
+@media(min-width:806px)
+  .fix-box
+    display: inline-block
+    float: left
+    border-left: 5px solid aqua
+    border-right: 5px solid aqua
+    border-bottom: 0px
+    width: 33.333333%
+    height: 20%
+  .fix--big
+    display: flex row
+    flex-wrap: nowrap
+    justify-content: space-around
+    overflow: auto
