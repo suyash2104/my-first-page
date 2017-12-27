@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  text-align: center; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all ease-in-and-out 250ms;
+  -o-transition: all ease-in-and-out 250ms;
+  transition: all ease-in-and-out 250ms; }
