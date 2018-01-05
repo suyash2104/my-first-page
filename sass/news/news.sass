@@ -1,17 +1,25 @@
+$back: #686886
 
 .news
   h2
     margin: 0
-    background-color: #686868
+    background-color: $back
     padding: 1em
     font-family: $font-heading
     color: aquamarine
     border-top: 7px solid aqua
-    text-decoration: underline
+    //text-decoration: underline
+
+    &::after
+      content: ""
+      display: block
+      height: 2px
+      background: white
+      margin-top: .15em
 
 .news-sec
     font-family: $font-news
-    background-color: #686868
+    background-color: $back
     overflow: auto
     border-bottom: 7px solid aqua
     ul
